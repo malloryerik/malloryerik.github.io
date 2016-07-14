@@ -1,1 +1,421 @@
-Hello World
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+    <head>
+	<title>searle-speech-acts</title>
+	<!-- 2016-07-14 Thu 11:59 -->
+	<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<meta  name="generator" content="Org-mode" />
+	<meta  name="author" content="Mallory Margueron" />
+	<style type="text/css">
+	 <!--/*--><![CDATA[/*><!--*/
+	 .title  { text-align: center; }
+	 .todo   { font-family: monospace; color: red; }
+	 .done   { color: green; }
+	 .tag    { background-color: #eee; font-family: monospace;
+             padding: 2px; font-size: 80%; font-weight: normal; }
+	 .timestamp { color: #bebebe; }
+	 .timestamp-kwd { color: #5f9ea0; }
+	 .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+	 .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+	 .center { margin-left: auto; margin-right: auto; text-align: center; }
+	 .underline { text-decoration: underline; }
+	 #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+	 p.verse { margin-left: 3%; }
+	 pre {
+	     border: 1px solid #ccc;
+	     box-shadow: 3px 3px 3px #eee;
+	     padding: 8pt;
+	     font-family: monospace;
+	     overflow: auto;
+	     margin: 1.2em;
+	 }
+	 pre.src {
+	     position: relative;
+	     overflow: visible;
+	     padding-top: 1.2em;
+	 }
+	 pre.src:before {
+	     display: none;
+	     position: absolute;
+	     background-color: white;
+	     top: -10px;
+	     right: 10px;
+	     padding: 3px;
+	     border: 1px solid black;
+	 }
+	 pre.src:hover:before { display: inline;}
+	 pre.src-sh:before    { content: 'sh'; }
+	 pre.src-bash:before  { content: 'sh'; }
+	 pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+	 pre.src-R:before     { content: 'R'; }
+	 pre.src-perl:before  { content: 'Perl'; }
+	 pre.src-java:before  { content: 'Java'; }
+	 pre.src-sql:before   { content: 'SQL'; }
+
+	 table { border-collapse:collapse; }
+	 caption.t-above { caption-side: top; }
+	 caption.t-bottom { caption-side: bottom; }
+	 td, th { vertical-align:top;  }
+	 th.right  { text-align: center;  }
+	 th.left   { text-align: center;   }
+	 th.center { text-align: center; }
+	 td.right  { text-align: right;  }
+	 td.left   { text-align: left;   }
+	 td.center { text-align: center; }
+	 dt { font-weight: bold; }
+	 .footpara:nth-child(2) { display: inline; }
+	 .footpara { display: block; }
+	 .footdef  { margin-bottom: 1em; }
+	 .figure { padding: 1em; }
+	 .figure p { text-align: center; }
+	 .inlinetask {
+	     padding: 10px;
+	     border: 2px solid gray;
+	     margin: 10px;
+	     background: #ffffcc;
+	 }
+	 #org-div-home-and-up
+	 { text-align: right; font-size: 70%; white-space: nowrap; }
+	 textarea { overflow-x: auto; }
+	 .linenr { font-size: smaller }
+	 .code-highlighted { background-color: #ffff00; }
+	 .org-info-js_info-navigation { border-style: none; }
+	 #org-info-js_console-label
+	 { font-size: 10px; font-weight: bold; white-space: nowrap; }
+	 .org-info-js_search-highlight
+	 { background-color: #ffff00; color: #000000; font-weight: bold; }
+	 /*]]>*/-->
+	</style>
+	<script type="text/javascript">
+	 /*
+	    @licstart  The following is the entire license notice for the
+	    JavaScript code in this tag.
+
+	    Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+	    The JavaScript code in this tag is free software: you can
+	    redistribute it and/or modify it under the terms of the GNU
+	    General Public License (GNU GPL) as published by the Free Software
+	    Foundation, either version 3 of the License, or (at your option)
+	    any later version.  The code is distributed WITHOUT ANY WARRANTY;
+	    without even the implied warranty of MERCHANTABILITY or FITNESS
+	    FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+	    As additional permission under GNU GPL version 3 section 7, you
+	    may distribute non-source (e.g., minimized or compacted) forms of
+	    that code without the copy of the GNU GPL normally required by
+	    section 4, provided you include this license notice and a URL
+	    through which recipients can access the Corresponding Source.
+
+
+	    @licend  The above is the entire license notice
+	    for the JavaScript code in this tag.
+	  */
+	 <!--/*--><![CDATA[/*><!--*/
+				       function CodeHighlightOn(elem, id)
+	 {
+	     var target = document.getElementById(id);
+	     if(null != target) {
+		 elem.cacheClassElem = elem.className;
+		 elem.cacheClassTarget = target.className;
+		 target.className = "code-highlighted";
+		 elem.className   = "code-highlighted";
+	     }
+	 }
+	 function CodeHighlightOff(elem, id)
+	 {
+	     var target = document.getElementById(id);
+	     if(elem.cacheClassElem)
+		 elem.className = elem.cacheClassElem;
+	     if(elem.cacheClassTarget)
+		 target.className = elem.cacheClassTarget;
+	 }
+	 /*]]>*///-->
+	</script>
+    </head>
+    <body>
+	<div id="content">
+	    <h1 class="title">searle-speech-acts</h1>
+	    <div id="table-of-contents">
+		<h2>Table of Contents</h2>
+		<div id="text-table-of-contents">
+		    <ul>
+			<li><a href="#sec-1">1. Speech Acts</a></li>
+			<li><a href="#sec-2">2. There are five types of speech acts:</a>
+			    <ul>
+				<li><a href="#sec-2-1">2.1. Representatives (or Assertives) &#x2013; <i>We assert that something is just so.</i></a></li>
+				<li><a href="#sec-2-2">2.2. Directives &#x2013; <i>We give directions.</i></a></li>
+				<li><a href="#sec-2-3">2.3. Commissives &#x2013; <i>We make commitments or promises about the future.</i></a></li>
+				<li><a href="#sec-2-4">2.4. Expressives &#x2013; <i>We express how we feel.</i></a></li>
+				<li><a href="#sec-2-5">2.5. Declaratives &#x2013; <i>We make a new fact in the world by declaring that it is.</i></a></li>
+			    </ul>
+			</li>
+			<li><a href="#sec-3">3. Other topics for thought:</a>
+			    <ul>
+				<li><a href="#sec-3-1">3.1. Direct and Indirect Speech Acts</a></li>
+				<li><a href="#sec-3-2">3.2. Context</a></li>
+				<li><a href="#sec-3-3">3.3. Final notes:</a></li>
+			    </ul>
+			</li>
+		    </ul>
+		</div>
+	    </div>
+	    <p>
+		<i>You've looked at the traditional four grammatical types of sentences. Those are interesting, but let's look further, at what some people feel are the five types of things you can <span class="underline">do</span> with sentences and language. Here we'll mainly look at a set of ideas from Professor John Searle.</i>
+	    </p>
+
+	    <p>
+		<i>His is just one way of looking at language, but I've chosen it because it so closely resembles or looks like the our list of types of grammatical sentences.</i>
+	    </p>
+
+
+	    <div id="outline-container-sec-1" class="outline-2">
+		<h2 id="sec-1"><span class="section-number-2">1</span> Speech Acts</h2>
+		<div class="outline-text-2" id="text-1">
+		    <p>
+"Speech act theory" is a way of looking at language. By "speech acts," we mean things we say or write that have a purpose or a function in communication &#x2013; words that "do things."
+		    </p>
+
+		    <p>
+This idea says that language doesn't simply pass around information. Instead, it <i>does</i> things in our social world. In fact, it could be said that our human world is literally built out of and organized through speech acts.
+		    </p>
+
+		    <p>
+Language allows us to make the promises, agreements, commands, statements and declarations that let us live and act together with great numbers of people &#x2013;  thousands, even millions or billions of humans can work together, whether by agreement, command, promise, or declaration. 
+		    </p>
+
+		    <p>
+According to this way of thinking, speech acts are the basic building blocks of the social world. Doctor's prescriptions, declarations of war, personal property, promotions in employment, laws, contracts, geology clubs, credit cards, legal punishments, science conventions, armies, measurement standards, app stores, marriages, school systems, and even countries themselves are created and maintained through speech acts, and would be impossible without them.
+		    </p>
+		</div>
+	    </div>
+
+
+
+	    <div id="outline-container-sec-2" class="outline-2">
+		<h2 id="sec-2"><span class="section-number-2">2</span> There are five types of speech acts:</h2>
+		<div class="outline-text-2" id="text-2">
+		    <p>
+Despite this, it is possible to reduce all "actions through language" or speech acts into just five categories: assertives, directives, commissives, expressives, and declaratives.
+		    </p>
+
+		    <p>
+In Searle's system, a speech act is defined by the <b>intention</b> behind it, or by what the speaker (or writer) is actually trying to do with their utterance or message. 
+		    </p>
+
+		    <p>
+Here are the five types:
+		    </p>
+		</div>
+
+		<div id="outline-container-sec-2-1" class="outline-3">
+		    <h3 id="sec-2-1"><span class="section-number-3">2.1</span> Representatives (or Assertives) &#x2013; <i>We assert that something is just so.</i></h3>
+		    <div class="outline-text-3" id="text-2-1">
+			<ul class="org-ul">
+			    <li>Statements, descriptions, assertions
+			    </li>
+			    <li>"Bluejays are the most beautiful birds in the world." "That was a great chapter." "E = mc2" "All humans are mammals, and all mammals are animals, therefore all humans are animals." "If I ask them, I think they will agree." "He saw the moon reflected in her eyes." "Apollo sent a plague on Thebes."
+			    </li>
+			    <li><b>Goal:</b> To represent how things are, and to get others to agree to this representation. Succeeds if others agree that the representation is correct.
+			    </li>
+			    <li><b>Before speech act:</b> belief
+			    </li>
+			    <li><b>Direction of fit:</b> The words try to match the state of the world (word-to-world).
+			    </li>
+			</ul>
+		    </div>
+		</div>
+
+		<div id="outline-container-sec-2-2" class="outline-3">
+		    <h3 id="sec-2-2"><span class="section-number-3">2.2</span> Directives &#x2013; <i>We give directions.</i></h3>
+		    <div class="outline-text-3" id="text-2-2">
+			<ul class="org-ul">
+			    <li>Orders, commands, <span class="underline">requests</span>, asking, begging, praying, inviting, advising, challenging
+			    </li>
+			    <li>"What time is it?" "Go to the store and buy me some string cheese!" "Run!" "Can you open the window?" "I need you to do me a favor."
+			    </li>
+			    <li><b>Goal:</b>  Try to get others to do things.
+			    </li>
+			    <li><b>Before speech act:</b> desire, want
+			    </li>
+			    <li><b>Direction of fit:</b> The speaker wants the world to match her words. Success if the listener does as told (thereby changing the world to fit the words).
+			    </li>
+			</ul>
+		    </div>
+		</div>
+
+		<div id="outline-container-sec-2-3" class="outline-3">
+		    <h3 id="sec-2-3"><span class="section-number-3">2.3</span> Commissives &#x2013; <i>We make commitments or promises about the future.</i></h3>
+		    <div class="outline-text-3" id="text-2-3">
+			<ul class="org-ul">
+			    <li>"I'll be there at 8 a.m. tomorrow." "I will pay you back next week." "I promise to take care of my hamster." 
+			    </li>
+			    <li>Promises, vows, pledges, contracts
+			    </li>
+			    <li><b>Goal:</b> Commit the speaker to some course of action
+			    </li>
+			    <li><b>Before speech act:</b> intention
+			    </li>
+			    <li><b>Direction of fit:</b> World fits to word &#x2013; tries to make the world match the words spoken.
+			    </li>
+			</ul>
+		    </div>
+		</div>
+
+		<div id="outline-container-sec-2-4" class="outline-3">
+		    <h3 id="sec-2-4"><span class="section-number-3">2.4</span> Expressives &#x2013; <i>We express how we feel.</i></h3>
+		    <div class="outline-text-3" id="text-2-4">
+			<ul class="org-ul">
+			    <li>Apologies, thanks, congratulations, (complaints?)
+			    </li>
+			    <li>"I'm sorry for stepping on your toe" "Congratulations on winning the race!" "Wow!"  
+			    </li>
+			    <li><b>Goal:</b> To express a state of mind, feeling, emotion
+			    </li>
+			    <li><b>Before speech act:</b> any, but usually understood already by those being spoken to
+			    </li>
+			    <li><b>Direction of fit:</b> Empty, null.  
+			    </li>
+			</ul>
+		    </div>
+		</div>
+
+		<div id="outline-container-sec-2-5" class="outline-3">
+		    <h3 id="sec-2-5"><span class="section-number-3">2.5</span> Declaratives &#x2013; <i>We make a new fact in the world by declaring that it is.</i></h3>
+		    <div class="outline-text-3" id="text-2-5">
+			<ul class="org-ul">
+			    <li><b>Examples:</b> 
+				<ul class="org-ul">
+				    <li>"By the power granted to me by the State of California, I now declare you husband and wife." 
+				    </li>
+				    <li>"I hereby accept you as a student at MIT." 
+				    </li>
+				    <li>"We've finished for today."
+				    </li>
+				    <li>"The party is over."
+				    </li>
+				    <li>"The court hereby declares the defendant, Jo Bapistomino, guilty in the horrendous murder of Dr. Wazzlebothit."
+				    </li>
+				    <li>"The term of office of members of the National Assembly shall be four years." 
+				    </li>
+				    <li>"We &#x2026; Representatives of the united States of America &#x2026; solemnly publish and declare, That these United Colonies are &#x2026; Free and Independent States"
+				    </li>
+				    <li>Another written example could include for example an airline's flight schedule, because the company thereby declares that such and such flights will happen at this and that hour.
+				    </li>
+				</ul>
+			    </li>
+			    <li><b>Goal:</b> To make something be a certain way by declaring or saying that it is that way.
+In other words, <span class="underline">to create facts in the world.</span>
+			    </li>
+			    <li><b>Before speech act:</b> Nothing! Desire or intention may have come before the declarative speech act, but it itself has no prelinguistic state. 
+			    </li>
+			    <li><b>Direction of fit:</b> Both! Declaratives try to make the world match the word <b>and</b> the word match the world <span class="underline">at the same time</span>. Maybe this is part of their magic. 
+			    </li>
+			</ul>
+		    </div>
+		</div>
+	    </div>
+
+
+	    <div id="outline-container-sec-3" class="outline-2">
+		<h2 id="sec-3"><span class="section-number-2">3</span> Other topics for thought:</h2>
+		<div class="outline-text-2" id="text-3">
+		</div><div id="outline-container-sec-3-1" class="outline-3">
+		    <h3 id="sec-3-1"><span class="section-number-3">3.1</span> Direct and Indirect Speech Acts</h3>
+		    <div class="outline-text-3" id="text-3-1">
+			<p>
+There are both "direct" and "indirect" speech acts. <i>Indirect</i> speech acts are when we imply but don't directly state something, and also sometimes when we include several meanings in one utterance (saying). We might be masking our intentions, or adding layers meaning.
+			</p>
+
+			<p>
+Indirect: "If we don't go now we'll be late."
+Direct: "Let's go now, because otherwise we'll be late."
+			</p>
+
+			<p>
+			    <i>At a dinner party, the host speaking</i>
+Indirect: "I'm getting sleepy."
+Direct: "It's time for you to go home" (Directive), or maybe, "The dinner party is over" (Declaration).
+			</p>
+
+
+			<p>
+These are both <i>directive</i> speech acts (giving directions, "let's go") even though the indirect version is grammatically a statement ("declarative sentence"), and only the second is gramatically a command ("imperative sentence").
+			</p>
+
+			<p>
+[Confusing, right? A declarative in grammar is an assertive in speech act theory. Aigo!]
+			</p>
+
+			<p>
+A single sentence  may combine speech acts. Think of a complaint. A grumpy guy bought a pair of headphones from e-Mart. He returns to e-Mart and goes to the refund desk. "I'm sorry to tell you this but these headphones I bought don't work, they sound like you're listening underwater and the left ear bud is louder than the right earbud, so I'm very unhappy."
+			</p>
+
+			<p>
+What kinds of speech acts are being used?
+			</p>
+
+			<p>
+There are elements of respresentative (describing his beliefs about the headphones) and Expressive (sharing his mood), but overall, what is the speaker's intention?
+Right! He wants his money back, or a new pair of headphones. So what he is mostly <i>doing</i> is making a request, an implied or indirect directive, "give me a refund or new pair of headphones," and this request is being backed up, justified by the respresentative statement that "these don't work right." 
+			</p>
+		    </div>
+		</div>
+
+		<div id="outline-container-sec-3-2" class="outline-3">
+		    <h3 id="sec-3-2"><span class="section-number-3">3.2</span> Context</h3>
+		    <div class="outline-text-3" id="text-3-2">
+			<p>
+			    <i>To be written or discussed</i>
+			</p>
+		    </div>
+		</div>
+
+
+		<div id="outline-container-sec-3-3" class="outline-3">
+		    <h3 id="sec-3-3"><span class="section-number-3">3.3</span> Final notes:</h3>
+		    <div class="outline-text-3" id="text-3-3">
+			<p>
+Here, I've chosen to mainly discuss the speech act theory developed by a famous professor named John Searle. There are other competing versions, but his is probably the most widely accepted, and it's the one with which I'm most familiar&#x2026;
+			</p>
+
+			<p>
+In other versions, Complaints might have their own spot as a unique kind of speech act, for example.
+			</p>
+
+
+			<p>
+You'll notice that the types all end in "-ive," like "declarative."
+			</p>
+
+			<p>
+-ive
+			</p>
+
+			<p>
+a suffix of adjectives <b>(and nouns of adjectival origin)</b> expressing tendency, disposition, function, connection, etc. &#x2013; Causing and making.
+			</p>
+
+			<p>
+active; corrective; destructive; detective; passive; sportive.
+			</p>
+
+			<p>
+Compare -ative, -itive.
+			</p>
+
+			<p>
+So, a declarative message declares. A representative message represents. A commissive speech act commits the speaker to a future actions, like when I made the promise that I'd explain something about speech act theory to you ^^ .
+			</p>
+		    </div>
+		</div>
+	    </div>
+	</div>
+	<div id="postamble" class="status">
+	    <p class="date">Created: 2016-07-14 Thu 11:59</p>
+	    <p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.5.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
+	</div>
+    </body>
+</html>
